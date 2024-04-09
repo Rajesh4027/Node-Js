@@ -45,7 +45,6 @@ const http = require('http');
 // console.log('Reading file...');
 
 const html = fs.readFileSync('./Template/index.html','utf-8')
-const contact = fs.readFileSync('./Template/contact.html','utf-8')
 
 // creating simple web server
 
@@ -56,16 +55,16 @@ const server = http.createServer((request,response)=>{
     let path = request.url;
     
     if(path === '/' || path.toLocaleLowerCase() === '/home'){
-        response.end(html);
+        response.end(html.replace('{{%CONTENT%}}','you are in Home page'));
     }
     else if(path.toLocaleLowerCase() === '/about'){
-        response.end('Hello this is about page')
+        response.end(html.replace('{{%CONTENT%}}','you are in about page '))
     }
     else if(path.toLocaleLowerCase() === '/contact'){
-        response.end(contact)
+        response.end(html.replace('{{%CONTENT%}}','you are in content page'))
     }
     else {
-        response.end('error:404 Page Not Found')
+        response.end(html.replace('{{%CONTENT%}}','error:404 Page Not Found'))
     }
 });
 
