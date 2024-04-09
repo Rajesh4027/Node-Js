@@ -75,6 +75,14 @@ const server = http.createServer((request,response)=>{
         });
         response.end(html.replace('{{%CONTENT%}}','you are in content page'))
     }
+    else if(path.toLocaleLowerCase() === '/products'){
+        fs.readFile('./Data/product.json','utf-8',(error,data)=>{
+            response.writeHead(200,{
+                'Content-Type' : 'application/json',
+            });
+            response.end(data);
+        });
+    }
     else {
         response.writeHead(404,{
             'Content-Type' : 'text/html',
