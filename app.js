@@ -45,6 +45,7 @@ const http = require('http');
 // console.log('Reading file...');
 
 const html = fs.readFileSync('./Template/index.html','utf-8')
+let products = JSON.parse(fs.readFileSync('./Data/product.json','utf-8'))
 
 // creating simple web server
 
@@ -76,12 +77,11 @@ const server = http.createServer((request,response)=>{
         response.end(html.replace('{{%CONTENT%}}','you are in content page'))
     }
     else if(path.toLocaleLowerCase() === '/products'){
-        fs.readFile('./Data/product.json','utf-8',(error,data)=>{
-            response.writeHead(200,{
-                'Content-Type' : 'application/json',
-            });
-            response.end(data);
+        response.writeHead(200,{
+            'Content-Type' : 'application/json'
         });
+        response.end('Your are in products page')
+        console.log(products);
     }
     else {
         response.writeHead(404,{
