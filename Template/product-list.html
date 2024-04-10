@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Products list</title>
+</head>
+<style>
+    img{
+        margin: 20px 60px;
+        float: left;
+    }
+    .yell{
+        padding-top: 2px;
+    }
+    .ye{
+        margin-left: 60px;
+        display: flex;
+        align-items: center;
+    }
+</style>
+<body>
+    <div>
+        <form action="">
+            <img src={{%IMAGES%}} width="150" alt="...">
+        <div class="yell">
+            <p><span>Model Name:</span>{{%NAME%}}</p>
+            <p><span>Model Quantity:</span>{{%QUANTITY%}}</p>
+            <p><span>Product Weight:</span>{{%PRODUCT-WEIGHT%}}</p>
+        </div>
+        <div class="ye">
+            <h2>Price: {{%PRICE%}}</h2>
+            <h2>Color: {{%COLOR%}}</h2>
+            <button>Buy Now</button>
+            <button>Show Details</button>
+        </div>
+        </form>
+        
+    </div>
+</body>
+</html>

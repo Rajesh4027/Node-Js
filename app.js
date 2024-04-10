@@ -46,6 +46,18 @@ const http = require('http');
 
 const html = fs.readFileSync('./Template/index.html','utf-8')
 let products = JSON.parse(fs.readFileSync('./Data/product.json','utf-8'))
+let productListHtml = fs.readFileSync('./Template/product-list.html','utf-8');
+
+let productHtmlArray = products.map((prod) => {
+    let output = productListHtml.replace('{{%IMAGES%}}',prod.ProductImage);
+    output = output.replace('{{%NAME%}}',prod.Name);
+    output = output.replace('{{%QUANTITY%}}',prod.Category);
+    output = output.replace('{{%PRODUCT-WEIGHT%}}',prod.Size);
+    output = output.replace('{{%PRICE%}}',prod.Price);
+    output = output.replace('{{%COLOR%}}',prod.Color);
+
+    return output;
+})
 
 // creating simple web server
 
@@ -60,7 +72,7 @@ const server = http.createServer((request,response)=>{
             'Content-Type' : 'text/html',
             'my-header' : 'Hellow, world'
          });
-        response.end(html.replace('{{%CONTENT%}}','you are in Home page'));
+        response.end(html.replace('{{%CONTENT%}}',productListHtml));
     }
     else if(path.toLocaleLowerCase() === '/about'){
         response.writeHead(200,{
@@ -77,11 +89,12 @@ const server = http.createServer((request,response)=>{
         response.end(html.replace('{{%CONTENT%}}','you are in content page'))
     }
     else if(path.toLocaleLowerCase() === '/products'){
+        let productResponseHtml = html.replace('{{%CONTENT%}}',productHtmlArray.join(','));
         response.writeHead(200,{
-            'Content-Type' : 'application/json'
+            'Content-Type' : 'text/html'
         });
-        response.end('Your are in products page')
-        console.log(products);
+        response.end(productResponseHtml)
+        // console.log(productHtmlArray.join(','));
     }
     else {
         response.writeHead(404,{

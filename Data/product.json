@@ -1,70 +1,56 @@
 [
-	{
-		"id": "0001",
-		"type": "donut",
-		"name": "Cake",
-		"ppu": 0.55,
-		"batters":
-			{
-				"batter":
-					[
-						{ "id": "1001", "type": "Regular" },
-						{ "id": "1002", "type": "Chocolate" },
-						{ "id": "1003", "type": "Blueberry" },
-						{ "id": "1004", "type": "Devil's Food" }
-					]
-			},
-		"topping":
-			[
-				{ "id": "5001", "type": "None" },
-				{ "id": "5002", "type": "Glazed" },
-				{ "id": "5005", "type": "Sugar" },
-				{ "id": "5007", "type": "Powdered Sugar" },
-				{ "id": "5006", "type": "Chocolate with Sprinkles" },
-				{ "id": "5003", "type": "Chocolate" },
-				{ "id": "5004", "type": "Maple" }
-			]
-	},
-	{
-		"id": "0002",
-		"type": "donut",
-		"name": "Raised",
-		"ppu": 0.55,
-		"batters":
-			{
-				"batter":
-					[
-						{ "id": "1001", "type": "Regular" }
-					]
-			},
-		"topping":
-			[
-				{ "id": "5001", "type": "None" },
-				{ "id": "5002", "type": "Glazed" },
-				{ "id": "5005", "type": "Sugar" },
-				{ "id": "5003", "type": "Chocolate" },
-				{ "id": "5004", "type": "Maple" }
-			]
-	},
-	{
-		"id": "0003",
-		"type": "donut",
-		"name": "Old Fashioned",
-		"ppu": 0.55,
-		"batters":
-			{
-				"batter":
-					[
-						{ "id": "1001", "type": "Regular" },
-						{ "id": "1002", "type": "Chocolate" }
-					]
-			},
-		"topping":
-			[
-				{ "id": "5001", "type": "None" },
-				{ "id": "5002", "type": "Glazed" },
-				{ "id": "5003", "type": "Chocolate" },
-				{ "id": "5004", "type": "Maple" }
-			]
-	}
+    {
+        "Product ID":1,
+        "SKU":"WKS-6016","Name":"Uptown Girl Blouse",
+        "Product URL":"https://www.domain.com/product/wks-6016",
+        "Price":58,"Retail Price":89.95,
+        "Thumbnail URL":"https://www.domain.com/images/wks-6016_600x600.png",
+        "Search Keywords":"lorem, ipsum, dolor, ...",
+        "Description":"Sociosqu facilisis duis ...",
+        "Category":"Clothing>Tops>Blouses",
+        "Category ID":285,
+        "Brand":"Entity Apparel",
+        "Child SKU":"WKS-6016-CORD-MD|WKS-6016-KEGR-MD",
+        "Child Price":"",
+        "Color":"Coral Red|Kelly Green",
+        "Color Family":"Red|Green",
+        "Color Swatches":"[{\"color\":\"Coral Red\", \"family\":\"Red\", \"swatch_img\":\"/swatches/coral_red.png\", \"thumbnail\":\"/images/wks-6016-cord-md_600x600.png\", \"price\":58}, {\"color\":\"Kelly Green\", \"family\":\"Green\", \"swatch_img\":\"/swatches/kelly_green.png\", \"thumbnail\":\"/images/wks-6016-kegr-md_600x600.png\", \"price\":58}]","Size":"Medium","Shoe Size":"","Pants Size":"","Occassion":"","Season":"Summer|Spring","Badges":"Exclusive","Rating Avg":4.2,"Rating Count":11,"Inventory Count":9,"Date Created":"2018-03-16 21:55:28",
+        "ProductImage": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fimagess&psig=AOvVaw3hR-HpjceZxk27ibPzxdzc&ust=1712812533775000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjY1IfytoUDFQAAAAAdAAAAABAE"
+    },
+    {
+        "Product ID":1,
+        "SKU":"WKS-6016","Name":"Uptown Girl Blouse",
+        "Product URL":"https://www.domain.com/product/wks-6016",
+        "Price":58,"Retail Price":89.95,
+        "Thumbnail URL":"https://www.domain.com/images/wks-6016_600x600.png",
+        "Search Keywords":"lorem, ipsum, dolor, ...",
+        "Description":"Sociosqu facilisis duis ...",
+        "Category":"Clothing>Tops>Blouses",
+        "Category ID":285,
+        "Brand":"Entity Apparel",
+        "Child SKU":"WKS-6016-CORD-MD|WKS-6016-KEGR-MD",
+        "Child Price":"",
+        "Color":"Coral Red|Kelly Green",
+        "Color Family":"Red|Green",
+        "Color Swatches":"[{\"color\":\"Coral Red\", \"family\":\"Red\", \"swatch_img\":\"/swatches/coral_red.png\", \"thumbnail\":\"/images/wks-6016-cord-md_600x600.png\", \"price\":58}, {\"color\":\"Kelly Green\", \"family\":\"Green\", \"swatch_img\":\"/swatches/kelly_green.png\", \"thumbnail\":\"/images/wks-6016-kegr-md_600x600.png\", \"price\":58}]","Size":"Medium","Shoe Size":"","Pants Size":"","Occassion":"","Season":"Summer|Spring","Badges":"Exclusive","Rating Avg":4.2,"Rating Count":11,"Inventory Count":9,"Date Created":"2018-03-16 21:55:28",
+        "ProductImage": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fimagess&psig=AOvVaw3hR-HpjceZxk27ibPzxdzc&ust=1712812533775000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjY1IfytoUDFQAAAAAdAAAAABAE"
+    },
+    {
+        "Product ID":1,
+        "SKU":"WKS-6016","Name":"Uptown Girl Blouse",
+        "Product URL":"https://www.domain.com/product/wks-6016",
+        "Price":58,"Retail Price":89.95,
+        "Thumbnail URL":"https://www.domain.com/images/wks-6016_600x600.png",
+        "Search Keywords":"lorem, ipsum, dolor, ...",
+        "Description":"Sociosqu facilisis duis ...",
+        "Category":"Clothing>Tops>Blouses",
+        "Category ID":285,
+        "Brand":"Entity Apparel",
+        "Child SKU":"WKS-6016-CORD-MD|WKS-6016-KEGR-MD",
+        "Child Price":"",
+        "Color":"Coral Red|Kelly Green",
+        "Color Family":"Red|Green",
+        "Color Swatches":"[{\"color\":\"Coral Red\", \"family\":\"Red\", \"swatch_img\":\"/swatches/coral_red.png\", \"thumbnail\":\"/images/wks-6016-cord-md_600x600.png\", \"price\":58}, {\"color\":\"Kelly Green\", \"family\":\"Green\", \"swatch_img\":\"/swatches/kelly_green.png\", \"thumbnail\":\"/images/wks-6016-kegr-md_600x600.png\", \"price\":58}]","Size":"Medium","Shoe Size":"","Pants Size":"","Occassion":"","Season":"Summer|Spring","Badges":"Exclusive","Rating Avg":4.2,"Rating Count":11,"Inventory Count":9,"Date Created":"2018-03-16 21:55:28",
+        "ProductImage": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fimagess&psig=AOvVaw3hR-HpjceZxk27ibPzxdzc&ust=1712812533775000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjY1IfytoUDFQAAAAAdAAAAABAE"
+    }
 ]
